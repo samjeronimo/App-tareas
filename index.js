@@ -1,7 +1,15 @@
-import { header } from "./Componentes/Header/header.js";
-import { formulario } from "./Componentes/Tarea/tarea.js";
+import { cargarHeader } from "./Componentes/Header/header.js";
+import {cargarTarea} from "./Componentes/Tarea/tarea.js"
 
-let DOM = document.getElementById('root');
+function cargarDOM() {
 
-DOM.appendChild(header());
-DOM.appendChild(formulario());
+    let DOM = document.getElementById('root');
+
+    DOM.appendChild(cargarHeader());
+    DOM.appendChild(cargarTarea());
+
+}
+
+cargarDOM();
+
+export { cargarDOM }

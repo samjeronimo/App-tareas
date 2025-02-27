@@ -1,6 +1,7 @@
 import { tareas } from './data.js';
+import { tarea } from './itemtarea.js';
 
-function formulario() {
+function cargarTarea() {
     let lista = document.createElement('div');
     lista.className = 'lista';
 
@@ -50,7 +51,11 @@ function formulario() {
     btn.appendChild(btn2);
     lista.appendChild(btn);
 
+    //lista.appendChild(tarea());
+
     return lista;
+
+    
 }
 
-export { formulario };
+export { cargarTarea }
