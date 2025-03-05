@@ -3,7 +3,7 @@ import { desmarcar } from "./funcionesTareas.js";
 function tarea() {
      
     let lis = document.createElement('div');
-    lis.className = 'lista';
+    lis.className = 'lista2';
 
     let h2 = document.createElement('h2');
     h2.textContent = 'Personal';

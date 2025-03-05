@@ -1,4 +1,5 @@
 function cargarHeader() {
+    
     let header = document.createElement('header');
     header.className = "div-header";
 
