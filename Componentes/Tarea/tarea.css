@@ -1,83 +1,54 @@
-.lista {
-    background-color: white;
-    padding: 3rem;
-    max-width: 375px;
-    box-shadow: 0 4px 6px black;
-    font-family: Arial, sans-serif;
-    height: 62.5rem;
-    border-radius: 8px;
-    margin: 1.5rem 0;
+.lista2 {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaciado entre el checkbox y el texto */
+  margin-top: 2rem;
+  border: 2px solid black;
 
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: black;
-    text-align: left;
-  }
-  
-  
-  .tareas {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  
-  .seleccionado {
-    background-color: rgb(39, 253, 39); 
-  }
-  
-  .cuadrito {
-    width: 1.8rem;
-    height: 1.8rem;
-    cursor: pointer;
-  }
-  
-  
-  .objetos {
-    font-size: 1.5rem;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .btn {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  
-  .texto {
-    flex: 1;
-    padding: 1rem;
-    border: 1px solid gray;
-    border-radius: 5px;
-    font-size: 1.4rem;
-  }
-  
-  
-  .btn2 {
-    background-color: black;
-    color: white;
-    padding: 1rem 1.6rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.4rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn2:hover {
-    background-color: #555;
-  }
+  padding: 12px;
+  border: 2px solid #ddd; /* Bordes de la tabla */
+  border-radius: 8px; /* Esquinas redondeadas */
+  font-size: 16px;
+
+  font-family: Arial, sans-serif;
+  background: #fff;
+
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-bottom: 8px; /* Espaciado entre elementos */
+}
+
+.lista2:hover {
+  background: #f9f9f9;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Efecto al pasar el mouse */
+}
+
+/* Ajusta el checkbox */
+.lista2 input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-right: 10px; /* Espaciado entre el checkbox y el texto */
+}
+
+/* Asegura que el texto se mantenga alineado */
+.lista2 p {
+  margin: 0;
+  flex-grow: 1;
+  font-weight: bold;
+  text-align: left; /* Asegura alineación a la izquierda */
+}
+
+/* Agregar un contenedor general con bordes */
+.lista-container {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f8f8f8;
+  max-width: 400px; /* Ajusta el tamaño */
+  margin: auto; /* Centrar */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra general */
+}
+
