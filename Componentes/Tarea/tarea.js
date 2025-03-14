@@ -1,3 +1,4 @@
+import { agregarTarea } from '../Formulario/funcionesFormulario.js';
 import { tarea } from './itemtarea.js';
 
 function consultarTareasBackEnd() {
@@ -24,7 +25,7 @@ function renderTarea(data) {
     return div;
 }
 
-
+agregarTarea();
 
 
 export {  consultarTareasBackEnd };
